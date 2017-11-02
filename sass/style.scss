@@ -1,0 +1,316 @@
+
+
+body, html, header, #wines, #vendors {
+	margin: 0px;
+	padding: 0px;
+	/* background-color: black; */
+}
+
+header{
+
+	height : 50px;
+	background-color: rgb(0, 56, 0);
+	margin: 0px;
+	color: white;
+	display: flex;
+	justify-content: space-between;
+
+	#enterprise {
+
+		width:50%;
+		display: flex;
+		justify-content: space-around;
+
+		h1.ordi {
+			
+			font-weight: bold;
+			margin : 0px;
+			text-align: center;
+			color: white;
+			margin-top: 5px;
+			
+			@media screen and (max-width: 768px) { //smartphone
+				display: none;
+			}
+		}
+		h1.mobil {
+			
+			display: none;
+			
+			@media screen and (max-width: 768px) { //smartphone
+				display: block;
+				margin: 0px;
+				font-size: 1.2em;
+			}
+		}
+
+		#vendor {
+			margin-top: 10px;
+			color: white;
+			
+		}
+
+	}
+	#navigator{
+
+		display: flex;
+
+		#lastPage, #hamb {
+			cursor: pointer;
+			text-align: right;
+			margin-right: 20px;
+			
+			.fa {
+				margin: 10px 10px 0px 0px;
+				font-size: 2em;
+			}
+		}
+
+	}
+	
+
+	#nav {
+		z-index: 500;
+		display: none;
+		background-color: rgba(14, 14, 14, 0.801);
+		color: white;
+		position: absolute;
+		top: 50px;
+		right: 0px; 
+		height: calc( 100vh - 50px);
+		width: 150px;
+		font-weight: bold;
+
+		ul {
+			list-style-position: inside;
+			list-style: none;
+			padding-left: 20px;
+
+			li {
+
+				margin-top: 10px;
+				list-style-position: inside;
+				list-style: none;
+				color: white;
+				min-height: 30px;
+
+				ul li {
+					margin-top: 10px;
+				}
+
+			}
+
+			a {
+				color: rgb(110, 66, 153);
+				text-decoration: none;
+			}
+
+		}
+
+		.sep {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+
+		.separator {
+			width: 100px;
+			border-radius: 20px;
+			height:5px;
+			background-color: gray;
+		}
+
+		#quit {
+			cursor: pointer;
+		}
+
+	}
+
+}
+
+
+main {
+	background-color: rgb(70, 53, 0);
+	width: 100%;
+	height: calc( 100vh - 50px);
+
+	section {
+		display: none;
+		position: absolute;
+		top:50px;
+		left:0px;
+		width: 100%;
+		height: calc( 100vh - 50px);
+	}
+
+	#login {
+		z-index: 5;
+		display: flex;
+		margin: auto;
+
+		form {
+			border: 1px solid black;
+			width : 400px;
+			height: 200px;
+			text-align: center;
+			margin: auto;
+
+			input {
+				height: 30px;
+				width: 90%;
+				border-radius: 5px;
+				margin : 10px 0px;
+				
+				font-size: 1.1em;
+				padding-left: 10px;
+			}
+			input[type=submit]{
+
+				width: 94%;
+			}
+
+		}
+
+
+	}
+
+
+	#menu-category{
+		z-index: 10;
+		display: flex;
+		justify-content: space-around;
+		vertical-align: middle;
+
+		@media screen and (max-width: 768px) { //smartphone
+			flex-direction: column;
+		}
+		.button {
+			
+			width:150px;
+			height: 150px;
+			border-radius: 20px;
+			text-align: center;
+			display: flex;
+
+			h2 {
+	
+				margin: auto;
+			}
+		}
+
+		a {
+			margin: auto;
+			text-decoration: none;
+			color: blue;
+		}
+
+	}
+
+	.block {
+		z-index: 20;
+		display: none;
+		width: 100%;
+		height: calc( 100vh - 50px);
+		overflow-y: scroll;
+	}
+
+	.red {
+		background-color: rgb(160, 1, 160);
+	}
+	.pink {
+		background-color: rgb(253, 128, 151);
+	}
+	.white {
+		background-color: rgb(255, 253, 154);
+	}
+
+	#red , #pink , #white {
+		
+		h2 {
+
+			text-align: center;
+			font-weight: bold;
+			width : 100%
+
+		}
+	
+		.item {
+
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			height: 100px;
+			width : 200px;
+			margin: 50px 50px;
+			font-weight: bold;
+			font-size: 1.2em;
+			text-align: center;
+			padding: 5px 10px;
+			border-radius: 30px;
+			box-shadow: 8px 8px 0px rgba(134, 134, 134, 0.459);
+
+			cursor: pointer;
+
+		}
+
+		.red {
+
+			background: purple;
+			color: white;
+
+		}
+
+		.pink {
+
+			background: pink;
+
+		}
+
+		.white {
+
+			background: yellow;
+
+		}
+
+		
+	}
+
+
+	#detail {
+
+		background-color: rgb(70, 53, 0);
+		z-index: 25;
+		display: flex;
+
+		.vindetail {
+			
+			width: 100%;
+			min-height : 100%;
+			margin: auto;
+
+			h2, h3,p {
+
+				text-align: center;
+				color: white;
+				font-size: 1.5em;
+
+			}
+
+		}
+
+	}
+
+
+}
+
+
+
+
+@media screen and (max-width: 768px) { //smartphone
+	
+}
+
+
+
+
+

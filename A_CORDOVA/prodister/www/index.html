@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Wine vendors</title>
+	<link rel="stylesheet" href="libs/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="CSS/style.css">
+
+</head>
+<body>
+
+	
+	<header>
+		<div id="enterprise">
+			<h1 class="ordi">Prodister / Terrats</h1>
+			<h1 class="mobil">Prodister <br /> Terrats</h1>
+			<h2 id="vendor"></h2>
+			
+		</div>
+		<div id="navigator">
+				<div id="lastPage">
+					<i class="fa fa-arrow-left" aria-hidden="true"></i>
+				</div>
+				<div id="hamb">
+					<i class="fa fa-bars" aria-hidden="true"></i>
+				</div>
+			</div>
+		
+		<div id="nav">
+			<ul>
+				<li><a href="#menu-category" class="category-link">Categories</a>
+					<ul id="nav-category">
+						<!-- peupler avec li category -->
+					</ul>
+				</li>
+				<li class="sep"><div class="separator"></div></li>
+				<li id="quit">Quitter</li>
+			</ul>
+		</div>
+	</header>
+	<!-- login -->
+	
+	<main>
+		<section id="login">
+			<form>
+				<input type="text" id="vendorName" placeholder="Votre prénom" />
+				<input type="password" id="vendorPassword" placeholder="Mot de passe" />
+				<input type="submit" value="se connecter" />
+			</form>
+			<div id="errors">
+				
+			</div>
+		</section>
+
+		<section id="menu-category" class="page">
+				
+			<!-- peupler avec div category -->
+
+		</section>
+
+		<section id=wines class="page">
+
+			<!-- peupler avec les vins de la catégorie -->
+		
+		</section>
+		<section id=detail class="page container">
+			
+			<!-- peupler avec le détail du vin -->
+					
+		</section>
+
+		<!-- peupler avec div category -->
+
+	</main>
+	
+	<script src="JS/system.js"></script>
+	
+	
+	<script src="libs/jquery-3.2.1.min.js"></script>
+	<script src="libs/jquery-2.2.4.min.js"></script>
+	<script src="libs/jquery.mobile.custom.js"></script>
+	<script src="JS/main.js"></script>
+
+	
+	<script>
+		System.import( "main" ).catch( function( err ){ console.error(err); });
+	</script>
+</body>
+</html>

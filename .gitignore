@@ -1,0 +1,6 @@
+node_modules/
+A_CORDOVA/prodister/hooks/
+A_CORDOVA/prodister/node/node_modules
+A_CORDOVA/prodister/platforms
+A_CORDOVA/prodister/plugins
+A_CORDOVA/prodister/res
